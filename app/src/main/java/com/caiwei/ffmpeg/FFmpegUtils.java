@@ -10,4 +10,6 @@ public class FFmpegUtils {
     public static native void open(String inputStr, String outStr);
 
     public static native void render(String input, Surface surface);
+
+    public static native void sound(String input, String output);
 }
