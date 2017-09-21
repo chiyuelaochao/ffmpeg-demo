@@ -12,11 +12,17 @@
         android:id="@+id/translate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="translate"/>
+        android:text="translate video"/>
 
     <Button
-        android:id="@+id/display"
+        android:id="@+id/play_video"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="display"/>
+        android:text="play video"/>
+
+    <Button
+        android:id="@+id/play_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="play audio"/>
 </LinearLayout>

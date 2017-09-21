@@ -31,6 +31,10 @@
         </activity>
         <activity android:name=".TranslateActivity"/>
         <activity android:name=".MainActivity"/>
+        <activity android:name=".PlayVideoActivity">
+        </activity>
+        <activity android:name=".PlayAudioActivity">
+        </activity>
     </application>
 
 </manifest>

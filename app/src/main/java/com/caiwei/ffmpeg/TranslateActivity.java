@@ -16,11 +16,9 @@ public class TranslateActivity extends AppCompatActivity {
         setContentView(R.layout.activity_translate);
     }
 
-    public native void open(String inputStr, String outStr);
-
     public void load(View view) {
         String input = new File(Environment.getExternalStorageDirectory(), "input.mp4").getAbsolutePath();
         String output = new File(Environment.getExternalStorageDirectory(), "output.yuv").getAbsolutePath();
-        open(input, output);
+        FFmpegUtils.open(input, output);
     }
 }

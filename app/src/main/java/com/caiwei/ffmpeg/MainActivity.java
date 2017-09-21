@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViewById(R.id.translate).setOnClickListener(this);
-        findViewById(R.id.display).setOnClickListener(this);
+        findViewById(R.id.play_video).setOnClickListener(this);
+        findViewById(R.id.play_audio).setOnClickListener(this);
     }
 
     @Override
@@ -31,7 +32,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.translate:
                 startActivity(new Intent(MainActivity.this, TranslateActivity.class));
                 break;
-            case R.id.display:
+            case R.id.play_video:
+                startActivity(new Intent(MainActivity.this, PlayVideoActivity.class));
+                break;
+            case R.id.play_audio:
+                startActivity(new Intent(MainActivity.this, PlayAudioActivity.class));
                 break;
         }
     }
